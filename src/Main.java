@@ -38,12 +38,11 @@ public class Main
                         System.out.println("You chose SCISSORS!");
                         done = true;
                     }
+                    else
+                    {
+                        System.out.println("You entered: " + playerOne + ". Please enter an RPS move [R P S].");
+                    }
 
-                }
-                else
-                {
-                    trash = in.nextLine();
-                    System.out.println("You entered: " + trash + ". Please enter an RPS move [R P S].");
                 }
 
             }while(!done);
@@ -71,13 +70,12 @@ public class Main
                         System.out.println("You chose SCISSORS!");
                         done2 = true;
                     }
+                    else
+                    {
+                        System.out.println("You entered: " + playerTwo + ". Please enter an RPS move [R P S].");
+                    }
+                }
 
-                }
-                else
-                {
-                    trash = in.nextLine();
-                    System.out.println("You entered: " + trash + ". Please enter an RPS move [R P S].");
-                }
 
             }while(!done2);
 
@@ -147,16 +145,14 @@ public class Main
                         System.out.println("You chose to not play another round.");
                         gameOver = true;
                     }
+                    else
+                    {
+                        System.out.println("You entered: " + endGame + ". Please enter either Y or N.");
+                    }
 
                 }
-                else
-                {
-                    trash = in.nextLine();
-                    System.out.println("You entered: " + trash + ". Please enter either Y or N.");
-                }
+
             }while(!done3);
-
-
 
         }while(!gameOver);
 
